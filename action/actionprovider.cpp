@@ -30,3 +30,9 @@ void ActionProvider::exitApplication()
 {
     vtx::flux::Dispatcher::instance().dispatch(new vtx::flux::Action(ActionType::ExitApplication, QVariant()));
 }
+
+int test_inport(int a, int b) {
+	int c = a + b;
+	int d = a - b;
+	return c * d;
+}
